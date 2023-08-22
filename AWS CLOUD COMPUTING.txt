@@ -1,0 +1,147 @@
+-->cloud computing is the on-demand delivery of computer power,storage,database ,applications and other It resoures via internet with pay-as-you-go pricing.
+-->we can use two types of aws accounts they are root and aws academy accounts.
+-->csp-->cloud service provider
+-->isp-->internet service provider
+-->AMI-->Amazon Machine Image.
+-->there is no down time for server.
+-->cloud dont have specific definition it has expalanation-->multiple technologies come and meet in this cloud.
+---------------------------------------------------------------------------------------------------------------------
+-->cloud computing benefits:-
+================================
+         ->scalability
+         ->accessibility/flexibility
+         ->collabration / security
+         ->cost-effective/cost Savings.
+-->Cloud Computing - totally based on services --servers
+-----------------------------------------------------------------
+->CLIENT-SERVER MODEL:-
+---------------------------------------------
+-->(The Client-Server model is about a client that interacts and makes requests to a computer server.)
+-->server -computer -->it gives the services.
+-->client -computer -->services are taken by client
+-->work group -->in this group any one can act as server and client. eg:-sharing a file -->everyone can share it and everyone can access it.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-->some of the cloud vendors:-
+===============================
+     AWS
+     AZURE
+     GOOGLE CLOUD
+     ORACLE CLOUD
+     RACK SPACE 
+     ALIBABA CLOUD
+-->we are going to work with servers in the cloud.
+-->cloud -- the  more resoruces -the  less u pay.-->cloud refers to network of servers hosted on internet that allows users to store ,manage and access data.
+-->cloud --rented service 
+         --pooling of the resource
+         --on-demand service
+-->web server --website -- aec.edu.in
+=================================================================================================================================================================
+-->server layers:
+    -user --developer -- websiter -- python code --they dont know about hardware,os,software to be installed for the deployment.
+    -software(apache , mean ,react,--web software)  -->SAAS-->Gmail,Outlook
+    - operating system of its own version   -->PAAS -->system software
+    - hardware(cpu,ram,storage)  -->this called virtual machine -->provided by the cloud-->IAAS
+
+-->The csp is giving the only hardware is called as IAAS.
+-->The csp is giving the Hardware+os is called as PAAS.
+-->The csp is giving the Hardware + os + apllication software is called as SAAS.
+=================================================================================================================================
+-->ON-PREMISES SERVER:-
+  =====================
+ -->the server which is maintained within the premises is called on-permises server(eg:- servers in aditya are maintained within the college)
+--------------------------------------------------------------------------------------------------------------------------
+-->every server is a Virtual Machine.
+-->Physical Server --100+ virtual machines based on configuration -->rich persons will buy this server
+======================================================================================================================================
+-->NIST -->national institute of science and technology 
+-->NIST says that cloud should be combination of characteristics ,services and models.
+--> CLOUD CHARACTERISTICS:
+===============================================
+            there are 5 characteristics
+                 -->on-demand self service
+                 -->resoruce pooling --cloud point
+                 -->broad network access  -- No matterwhere you are , you can access that cloud around the world.
+                 -->elasticity --extensions or replicas.
+                 -->metered services-pay as you go
+====================================================
+-->CLOUD MODELS:-
+========================
+  -->public cloud -->Any one can use this cloud -->aws,azure,google cloud ,oracle cloud
+  -->private cloud -->it is only applicable for that particulary area people and they can only use that cloud.(eg:-servers in aditya are accessed by aditya students only)
+  -->community cloud -public 
+  -->hybrid cloud -- > combination of private and public clouds.
+============================================================================================
+-->CLOUD SERVICES:-
+======================================
+-->Infrastructure as a service(Iaas)
+-->Software as a service (SaaS)-->Software-as-a-Service (SaaS) is a way of delivering services and applications over the Internet.(netflix,aha,hostar -->these are all related to saas.)
+-->Platform as a service (PaaS)-->PaaS is a category of cloud computing that provides a platform and environment to allow developers to build applications and services over the internet(sreverless services related to paas -->lamba comes under the paas).
+-->Anything/Everything as a service (XaaS)
+-->Function as a Service (FaaS)
+-->the order of services are IAAS,PAAS,SAAS,XAAS
+==================================================
+AWS GLOBAL INFRASTRUCTURE:-
+-------------------------------
+AWS global Infrastructure divide into:
+ -->Aws Availability Zone -> AZs
+ -->Aws regions -->regions are not based on any country or territory -->they are based on geographical location.
+ -->Aws datacenters
+-->Aws availability zones and datacenters are connected with high bandwidth , low latency , highly available network cables -->fiber optic cables.
+-->AWS is maintaining 31 launched regions with 99 availability zones.
+================================================================================================================================================
+DEPLOYMNET MODELS:-
+=======================================
+-->There are three types of deployment models:-
+   ->cloud-based deployment-->Everything runs in the cloud.
+   ->on-premises-->Deploy resources using virtualization and management tools.-->It is also called as private cloud deployment.
+   ->hybrid-->In Hybrid , You connect cloud resources to an on-premises infrastructure.
+---------------------------------------------------------------------------------------------------------------
+EC2 INSTANCE:-
+============================
+-->EC2 is a virtual server / virtual machine in the Aws cloud.
+-->EC2->ECC->Elastic compute cloud
+-->EC2 instance, In other cloud vendors it is called as vm server.
+-->Why AWS EC2:- ->It makes the process of Increasing and Decreasing of Capacity Easier, EC2 is secure and you only pay for what you need.
+-->there are four regions for Ec2 Instances.
+-->virtualization is the cloud concept related to pooling and sharing resources.
+->
+=================================================================================================
+AWS VPC(virtual private cloud):-
+========================================
+-->it is a isolated section of AWS cloud where we can launch aws resoruces in a virtual network that wehave defined.
+-->by using vpc we can communicate with the user or group of users.
+-->vpn(virtual private network)
+-->To create VPC WE NEED TO SETUP FOLLOWING ONES:-
+      -->create vpc
+      -->create Subnets
+      -->create internet gateways
+      -->create Route Tables
+-->if we create two subnets one with public ip and other with private ip then use NAT to connect to the internet for updates.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ AWS S3(simple service storage bucket):-
+ ==========================================
+-->s3(simple service storage) bucket -->upload the floder and run the webapplication
+     -->after creating s3 bucket ,we need to create one file folder and then we need to upload our project file into that folder and we need to make every file as public using "make public by using ACLS(access contorl lists)".
+     -->In the next step copy that url and paste in new tab  our will be displayed.
+-->we need to give unique name for our bucket and it should contain small letters.
+-->By default we can Create 100 buckets in aws.
+-->s3 bucket is used to store the appliaction files and used  to deploy web appliaction files only.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+AWS LOAD BALANCER:-
+====================
+-->The main aim of Load-Balancer is to control the incoming Traffic and make sure of health checks , to control the traffic we need to add instances to the load balancer.
+-->Request timout->after how much time the instance is reporting
+-->interval -->after every 5 sec or 10 sec the instances will have health checks
+-->unhealthy checks
+-->healthy checks
+-->Elastic load balancing service
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AUTO SCALING:-
+===========================
+Auto Scaling is a service that automatically adjusts the number of instances 
+in a group to match the demand of the application. It allows you to automatically increase or 
+decrease the number of EC2 instances in a group based on the changing needs of your 
+application.
+============================================================================================================
+AWS RDS(relational database):-
+================================
